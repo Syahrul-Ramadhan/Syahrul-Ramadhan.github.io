@@ -140,6 +140,40 @@
           </div>
         </div>
       </div>
+
+      <section id="my-animation">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Animation</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="animation-box">
+                <h4 class="animation-name">Drone</h4>
+                <img src="img/Animasi3D/FA-1.png" alt="animasi1" class="animation-img" />
+                <a href="#" class="btn btn-light animation-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="animation-box">
+                <h4 class="animation-name">Gimbot</h4>
+                <img src="img/Animasi3D/FA-2.png" alt="animasi2" class="animation-img" />
+                <a href="#" class="btn btn-light animation-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="animation-box">
+                <h4 class="animation-name">Cloud</h4>
+                <img src="img/Animasi3D/FA-2.png" alt="animasi3" class="animation-img" />
+                <a href="#" class="btn btn-light animation-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -328,6 +362,15 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".animation-box"), {
+        max: 30,
+        speed: 400,
+        glare: true,
       });
     </script>
   </body>
